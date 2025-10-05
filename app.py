@@ -53,7 +53,7 @@ class ExoplanetModel:
     def load_model(self):
         """Load your trained mmAI-2.1 model"""
         try:
-            model_data = joblib.load('saved_models/mmAI-2.1_final.joblib')
+            model_data = joblib.load('saved_models/mmAI-ExoplanetHunter-v4.0_complete.joblib')
             self.model = model_data['model']
             self.scaler = model_data['scaler']
             self.imputer = model_data['imputer']
