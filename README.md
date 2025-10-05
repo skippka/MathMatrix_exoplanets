@@ -1,4 +1,3 @@
-```markdown
 # 🌌 Exoplanet Explorer - NASA Kepler AI Analysis Platform
 
 <div align="center">
@@ -7,39 +6,50 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.68+-green.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.8+-orange.svg)
 ![Three.js](https://img.shields.io/badge/Three.js-R128-purple.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows|Linux|macOS-lightgrey.svg)
 
 **Advanced AI-Powered Exoplanet Discovery with Interactive 3D Universe**
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+*Discover distant worlds using NASA Kepler data and machine learning*
+
+[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-Codespaces-blue?logo=github)](https://codespaces.new/your-username/exoplanet-explorer)
+[![Deploy with Docker](https://img.shields.io/badge/Deploy-Docker-blue?logo=docker)](https://docs.docker.com/get-started/)
 
 </div>
 
 ## 🚀 Quick Start Guide
 
 ### 📋 Prerequisites
-- **Python 3.8 or higher**
-- **NASA Kepler dataset** (CSV format)
-- **Modern web browser** with WebGL support
+
+| Requirement | Minimum | Recommended | Check Command |
+|-------------|---------|-------------|---------------|
+| **Python** | 3.8 | 3.9+ | `python --version` |
+| **RAM** | 4GB | 8GB+ | `systeminfo \| find "Memory"` (Win)<br>`free -h` (Linux) |
+| **Storage** | 2GB | 5GB+ | `df -h` (Linux)<br>`Get-PSDrive C` (Win) |
+| **Browser** | Chrome 70+ | Chrome 90+ | `chrome://version/` |
+| **GPU** | Optional | NVIDIA GPU<br>(CUDA support) | `nvidia-smi` |
 
 ### ⚡ Installation & Setup
 
 #### 1. Clone and Setup
+
+**Option A: Standard Clone (Recommended)**
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/exoplanet-explorer.git
 cd exoplanet-explorer
 
-# Create virtual environment (recommended)
+# Create and activate virtual environment
 python -m venv venv
 
-# Activate virtual environment
-# On Windows:
+# Windows
 venv\Scripts\activate
-# On macOS/Linux:
+# macOS/Linux
 source venv/bin/activate
-```
 
+# Verify activation (should show 'venv' in prompt)
+which python  # Should point to venv directory
 #### 2. Install Dependencies
 ```bash
 # Install all required packages
@@ -163,10 +173,6 @@ exoplanet-explorer/
 ├── 🐍 app.py                 # FastAPI web server & 3D visualization
 ├── 🤖 train.py    # Advanced ML model training
 ├── 📁 saved_models/           # Trained model storage
-│   ├── mmAI-ExoplanetHunter-v4.0_complete.joblib
-│   ├── mmAI-2.1_final.joblib
-│   └── training_results.json
-├── 📄 requirements.txt        # Python dependencies
 ├── 📄 exoplanet_for_train.csv         # NASA dataset (add your file)
 └── 📄 README.md              # This documentation
 ```
