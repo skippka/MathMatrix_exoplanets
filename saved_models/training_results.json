@@ -1,0 +1,18 @@
+{
+  "final_accuracy": 0.506064408197407,
+  "final_auc": 0.9924725363039063,
+  "final_ap": 0.9857068364799656,
+  "best_score": 0.6126297999293463,
+  "training_date": "2025-10-05T21:24:52.439530",
+  "feature_count": 16,
+  "sample_count": 9564,
+  "similarity_analysis": {
+    "high_confidence": 1,
+    "medium_confidence": 4,
+    "total_candidates": 5
+  },
+  "class_distribution": {
+    "exoplanets": 4725,
+    "false_positives": 4839
+  }
+}
