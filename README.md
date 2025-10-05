@@ -25,7 +25,7 @@
 | Requirement | Minimum | Recommended | Check Command |
 |-------------|---------|-------------|---------------|
 | **Python** | 3.8 | 3.9+ | `python --version` |
-| **RAM** | 4GB | 8GB+ | `systeminfo \| find "Memory"` (Win)<br>`free -h` (Linux) |
+| **RAM** | 2GB | 4GB+ | `systeminfo \| find "Memory"` (Win)<br>`free -h` (Linux) |
 | **Storage** | 2GB | 5GB+ | `df -h` (Linux)<br>`Get-PSDrive C` (Win) |
 | **Browser** | Chrome 70+ | Chrome 90+ | `chrome://version/` |
 | **GPU** | Optional | NVIDIA GPU<br>(CUDA support) | `nvidia-smi` |
@@ -79,19 +79,19 @@ wget https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/kepler_data.csv
 
 **Basic Training (Recommended):**
 ```bash
-python train_nasa_kepler.py kepler_data.csv --iterations 500
+python train.py exoplanet_for_train.csv --iterations 500
 ```
 
 **Advanced Training Options:**
 ```bash
 # Extended training with more iterations
-python train_nasa_kepler.py kepler_data.csv --iterations 1000
+python train.py exoplanet_for_train.csv --iterations 1000
 
 # Training without early stopping
-python train_nasa_kepler.py kepler_data.csv --no-early-stopping
+python train.py exoplanet_for_train.csv --no-early-stopping
 
 # Custom model configuration
-python train_nasa_kepler.py kepler_data.csv --iterations 300 --batch-size 32
+python train.py exoplanet_for_train.csv --iterations 300 --batch-size 32
 ```
 
 **Expected Training Output:**
