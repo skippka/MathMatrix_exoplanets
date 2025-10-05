@@ -326,7 +326,6 @@ rm -rf saved_models/
 # Fresh installation
 python -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 ```
 
 ## 🤝 Contributing
@@ -354,8 +353,8 @@ Suggest new features via GitHub Issues with the `enhancement` label.
 
 ```bash
 # Begin your adventure
-python train_nasa_kepler.py kepler_data.csv
-python main.py
+python train.py exoplanet_fpr_train.csv --iterations 100
+python app.py
 ```
 
 *The universe is waiting to be discovered...* 🌟
